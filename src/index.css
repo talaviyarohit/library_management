@@ -1,0 +1,298 @@
+main {
+    /* margin-left: 270px; */
+    padding: 8px;
+    position: relative;
+    bottom: 0px;
+    flex-grow: 1;
+    overflow: hidden;
+    height: 100vh;
+    margin-top: 4px;
+    overflow-y: scroll;
+}
+
+body{
+    overflow-y: hidden;
+}
+.searchbar{
+    position: fixed;
+    top: 8%;
+   right: 0;
+    width: 40%;
+    height: 50px;
+    
+    padding: 10px;
+    
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.mtc-10{
+    margin-top: 50px;
+}
+.he-10{
+    height: 100px;
+}
+.product-title{
+    height: 20px;
+}
+
+
+/* From Uiverse.io by KapeParaguay */ 
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: linear-gradient(45deg, red, yellow);
+    padding: 30px;
+    width: 450px;
+    border-radius: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    transition: background 0.3s ease;
+  }
+  
+  .form:hover {
+    background: linear-gradient(45deg, yellow, red);
+  }
+  
+  ::placeholder {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+/*   
+  .form button {
+    align-self: flex-end;
+  } */
+  
+  .flex-column > label {
+    color: #151717;
+    font-weight: 600;
+  }
+  
+  .inputForm {
+    border: 1.5px solid #ecedec;
+    border-radius: 10em;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    transition: 0.2s ease-in-out;
+    background-color: white;
+  }
+  
+  .input {
+    
+    border-radius: 10rem;
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .input:focus {
+    outline: none;
+  }
+  
+  .inputForm:focus-within {
+    border: 1.5px solid #2d79f3;
+  }
+  
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  
+  .flex-row > div > label {
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+  }
+  
+  .span {
+    font-size: 14px;
+    margin-left: 5px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .button-submit {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background: transparent;
+    transition: ease-out 0.5s;
+    border: 2px solid;
+    border-radius: 10em;
+    box-shadow: inset 0 0 0 0 red;
+    margin: 20px 0 10px 0;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .button-submit:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 darkorange;
+  }
+  
+  .button-submit:active {
+    transform: scale(0.9);
+  }
+  
+  .p {
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .btn {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    gap: 10px;
+    border: 1px solid #ededef;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .btn:hover {
+    border: 1px solid #2d79f3;
+  }
+  
+  .login-container {
+    position: fixed;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .register-container {
+    position: fixed;
+    top: 50%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+  }
+  .btnclicked{
+    background-color: #2d79f3;
+    width: 100px;
+  }
+
+
+  /* From Uiverse.io by elijahgummer */ 
+.styled-button {
+  position: relative;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(to bottom, #171717, #242424);
+  border-radius: 9999px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #292929;
+}
+
+.styled-button::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  background: linear-gradient(to bottom, #292929, #000000);
+  z-index: -1;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+  opacity: 1;
+}
+
+.styled-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 1), 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.styled-button .inner-button {
+  position: relative; /* Ensure relative positioning for pseudo-element */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #171717, #242424);
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 1);
+  border: 1px solid #252525;
+  transition: all 0.2s ease;
+}
+
+.styled-button .inner-button::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  background: linear-gradient(to bottom, #292929, #000000);
+  z-index: -1;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+  opacity: 1;
+}
+.styled-button .inner-button .icon {
+  filter: drop-shadow(0 10px 20px rgba(26, 25, 25, 0.9))
+    drop-shadow(0 0 4px rgba(0, 0, 0, 1));
+  transition: all 0.4s ease-in-out;
+}
+.styled-button .inner-button .icon:hover {
+  filter: drop-shadow(0 10px 20px rgba(50, 50, 50, 1))
+    drop-shadow(0 0 20px rgba(2, 2, 2, 1));
+  transform: rotate(-35deg);
+}
+
+.editbutton {
+  color: #ecf0f1;
+  font-size: 25px;
+  background-color: #e67e22;
+  border: 1px solid #f39c12;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: 0px 6px 0px #d35400;
+  transition: all 0.1s;
+}
+
+.editbutton:active {
+  box-shadow: 0px 2px 0px #d35400;
+  position: relative;
+  top: 2px;
+}
+
+
+
+
+
+
+  
